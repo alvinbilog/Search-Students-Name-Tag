@@ -1,0 +1,49 @@
+.Home {
+  width: 103.8vh;
+  height: 76vh;
+  margin: 0 auto;
+  //   margin-top: 120px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  border-width: 1px 1px 1px 1px;
+  padding: 10px 20px 10px 20px;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 1),
+    0px 1px 3px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  position: relative;
+  top: 120px;
+  padding: 5px 18px 0 1px;
+  input {
+    border: none;
+    border-bottom: solid #d4d1d5 2px;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 10px 0 20px 3px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    letter-spacing: -1px;
+  }
+  input:hover {
+    border-bottom: solid black 2px;
+  }
+  input:focus {
+    outline: none;
+  }
+}
+.Home::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .Home {
+    width: 80%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Home {
+    width: 90%;
+    padding: 0;
+  }
+}

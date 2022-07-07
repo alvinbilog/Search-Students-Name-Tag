@@ -1,0 +1,154 @@
+.students {
+  display: flex;
+  .image-container {
+    padding: 14px 12px 14px 12px;
+    img {
+      width: 130px;
+      height: auto;
+      border: #d4d1d5 solid 0.2px;
+      border-radius: 50%;
+      margin-top: 2px;
+      margin-left: 2px;
+    }
+  }
+  .text-container {
+    // margin-left: 25px;
+    margin-bottom: 34px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      min-width: 700px;
+      margin-left: 20px;
+      height: 50px;
+      h1 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 42px;
+      }
+      button {
+        // border: green solid;
+        color: #a09fa1;
+        font-size: 90px;
+        position: relative;
+        top: -25px;
+        right: 8px;
+        cursor: pointer;
+        border: none;
+        background: none;
+        font-weight: 500;
+        // height: 20px;
+        padding: 0;
+        // display: none;
+      }
+      .plus:hover {
+        color: #010001;
+      }
+    }
+    p {
+      margin-left: 44px;
+      margin-top: 5px;
+      color: black;
+      font-size: 18px;
+      font-weight: 400;
+      opacity: 68%;
+      position: relative;
+      top: 7px;
+      letter-spacing: -1px;
+    }
+    .grades {
+      margin-top: 18px;
+      line-height: 15px;
+      span {
+        margin-left: 23px;
+      }
+    }
+    .tags-container {
+      min-width: 500px;
+      margin-left: 44px;
+      margin-top: 10px;
+      .tag-list {
+        display: flex;
+        justify-content: start;
+        margin-bottom: 20px;
+        .tag {
+          // width: 55px;
+          // height: 40px;
+          font-size: 18px;
+          font-weight: 400;
+          border-radius: 5px;
+          opacity: 100%;
+          background-color: #dddcdd;
+          padding: 7px 10px 7px 10px;
+          margin: 3px;
+        }
+      }
+
+      form {
+        width: 170px;
+        input {
+          margin: 0;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .students {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .image-container {
+      padding: 0;
+    }
+    .text-container {
+      width: 100%;
+      text-align: center;
+      padding: 8px;
+      .header {
+        min-width: 350px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        h1 {
+          font-size: 40px;
+        }
+        button {
+          border: red solid;
+          width: 40px;
+          height: 30px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 414px) {
+  .students {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .image-container {
+      padding: 0;
+    }
+    .text-container {
+      width: 100%;
+      text-align: center;
+      padding: 8px;
+      .header {
+        border: red solid;
+        h1 {
+          font-size: 30px;
+        }
+        button {
+          font-size: 60px;
+          border: red solid;
+        }
+      }
+    }
+  }
+}
